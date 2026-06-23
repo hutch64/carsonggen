@@ -1,0 +1,64 @@
+{
+  "name": "Song",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the generated song"
+    },
+    "lyrics": {
+      "type": "string",
+      "description": "Full song lyrics"
+    },
+    "car_make": {
+      "type": "string",
+      "description": "Make/model of the car"
+    },
+    "car_color": {
+      "type": "string",
+      "description": "Color of the car"
+    },
+    "car_year": {
+      "type": "string",
+      "description": "Year of the car"
+    },
+    "genre": {
+      "type": "string",
+      "enum": [
+        "country",
+        "rock",
+        "hip-hop",
+        "gospel",
+        "r&b",
+        "pop",
+        "metal",
+        "jazz"
+      ],
+      "description": "Musical genre"
+    },
+    "audio_url": {
+      "type": "string",
+      "description": "URL to the generated audio file"
+    },
+    "photo_front": {
+      "type": "string",
+      "description": "AI-generated front view photo URL"
+    },
+    "photo_side": {
+      "type": "string",
+      "description": "AI-generated side view photo URL"
+    },
+    "photo_rear": {
+      "type": "string",
+      "description": "AI-generated rear view photo URL"
+    },
+    "photo_interior": {
+      "type": "string",
+      "description": "AI-generated interior view photo URL"
+    }
+  },
+  "required": [
+    "title",
+    "lyrics"
+  ]
+}

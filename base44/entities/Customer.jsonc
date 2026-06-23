@@ -1,0 +1,48 @@
+{
+  "name": "Customer",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Customer full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Customer email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Customer phone number"
+    },
+    "songs_generated": {
+      "type": "number",
+      "description": "Total songs generated",
+      "default": 0
+    },
+    "total_spent": {
+      "type": "number",
+      "description": "Total amount spent in dollars",
+      "default": 0
+    },
+    "last_purchase_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of last purchase"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Admin notes about the customer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}
